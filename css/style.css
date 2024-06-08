@@ -81,10 +81,19 @@ body {
     padding: var(--fs-3);
 }
 
+.hero-bg {
+  background-image: url("../img/banner.webp");
+  background-position: top 0 right -10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
 .pointer {
   cursor: pointer;
 }
 
+/*#region FLEX */
 .flex {
   display: flex;
 }
@@ -93,7 +102,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*#endregion FLEX */
 
+/*#region SPACING */
 .g-1 {
   gap: var(--spacing-1);
 }
@@ -183,6 +194,7 @@ body {
   padding-top: var(--spacing-5);
   padding-bottom: var(--spacing-5);
 }
+/*#endregion SPACING */
 
 
 .fs-1 {
