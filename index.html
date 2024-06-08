@@ -21,7 +21,11 @@
   <!-- <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon" /> -->
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- SCRIPTS -->
+  <script src="./scripts/base.js" defer></script>
   
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,10 +35,11 @@
 </head>
 <body>
   <!--#region Header -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
+  <header class="header px-5 py-4">
+    <nav class="w-100 flex j-spacebetween">
+      <a href="" id="header-title" class="header-title fs-5">Rosa Tequila</a>
+      <button class="hamburger pointer fs-5"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-list">
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>

@@ -1,0 +1,230 @@
+/* --------------------------------------------------------------------------------- */
+/*#region GENERAL DEFAULTS  */
+/* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* These are some generic design choices for colour schemes, fonts, gutters and gaps */
+:root {
+  /* Color Schemes */
+  --clr-primary: #0d6efd;
+  --clr-secondary: #6c757d;
+  --clr-accent: #8b1428;
+
+  --clr-dark-grey: rgb(40, 40, 40);
+  --clr-dark-grey-75: rgba(40, 40, 40, .75);
+  --clr-dark-grey-50: rgba(40, 40, 40, .50);
+  --clr-dark-grey-25: rgba(40, 40, 40, .25);
+  --clr-dark-grey-10: rgba(40, 40, 40, .10);
+  --clr-grey: #808080;
+  --clr-light-grey: #D2D2D2;
+  --clr-white: #FDFDFD;
+
+  /* FONT */
+  --ff-default: 'Roboto', Helvetica, Arial, sans-serif;
+  --fw-default: 400;
+  --fs-default: 1rem;
+
+  --fs-1: 0.8rem;
+  --fs-2: 1rem;
+  --fs-3: 1.2rem;
+  --fs-4: 1.5rem;
+  --fs-5: 1.8rem;
+  --fs-6: 2rem;
+
+  /* Spacing */
+  --flow-spacing: 1em;
+
+  --spacing-1: 0.3rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.8rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.3rem;
+
+  /* --sm-breakpoint: 576px;
+  --md-breakpoint: 768px;
+  --lg-breakpoint: 992px;
+  --xl-breakpoint: 1200px;
+  --xxl-breakpoint: 1400px; */
+}
+
+body {
+  font: var(--fw-default) var(--fs-default) var(--ff-default);
+  color: var(--clr-dark-grey);
+}
+/*#endregion GENERAL DEFAULTS  */
+/* --------------------------------------------------------------------------------- */
+.header {
+  /* background-color: var(--clr-light-grey); */
+  box-shadow: 1px 1px 4px 0 var(--clr-dark-grey-25);
+}
+
+.header-title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list {
+  overflow: hidden;
+  /* Improve hiding code */
+  display: none; 
+}
+
+.nav-list.show {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  display: block;
+  position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--clr-secondary);
+    text-align: end;
+    width: 70%;
+    padding: var(--fs-3);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.v-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.g-1 {
+  gap: var(--spacing-1);
+}
+
+.g-2 {
+  gap: var(--spacing-2);
+}
+
+.g-3 {
+  gap: var(--spacing-3);
+}
+
+.g-4 {
+  gap: var(--spacing-4);
+}
+
+.g-5 {
+  gap: var(--spacing-5);
+}
+
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
+}
+
+.p-3 {
+  padding: var(--spacing-3);
+}
+
+.p-4 {
+  padding: var(--spacing-4);
+}
+
+.p-5 {
+  padding: var(--spacing-5);
+}
+
+.px-1 {
+  padding-left: var(--spacing-1);
+  padding-right: var(--spacing-1);
+}
+
+.px-2 {
+  padding-left: var(--spacing-2);
+  padding-right: var(--spacing-2);
+}
+
+.px-3 {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
+}
+
+.px-4 {
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
+}
+
+.px-5 {
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
+}
+
+.py-1 {
+  padding-top: var(--spacing-1);
+  padding-bottom: var(--spacing-1);
+}
+
+.py-2 {
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+}
+
+.py-3 {
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+}
+
+.py-4 {
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+}
+
+.py-5 {
+  padding-top: var(--spacing-5);
+  padding-bottom: var(--spacing-5);
+}
+
+
+.fs-1 {
+  font-size: var(--fs-1);
+}
+
+.fs-2 {
+  font-size: var(--fs-2);
+}
+
+.fs-3 {
+  font-size: var(--fs-3);
+}
+
+.fs-4 {
+  font-size: var(--fs-4);
+}
+
+.fs-5 {
+  font-size: var(--fs-5);
+}
+
+.fs-6 {
+  font-size: var(--fs-6);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.j-spacebetween {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+/*#region MEDIA QUERIES */
+/* @media only screen and (max-width: 1000px) {
+
+} */
+/*#endregion MEDIA QUERIES */
+/* --------------------------------------------------------------------------------- */
